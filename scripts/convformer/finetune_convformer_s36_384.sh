@@ -1,0 +1,17 @@
+DATA_PATH=/path/to/imagenet
+CODE_PATH=/path/to/code/metaformer # modeify code path here
+INIT_CKPT=/path/to/trained/model
+
+ALL_BATCH_SIZE=1024
+NUM_GPU=8
+GRAD_ACCUM_STEPS=4 # Adjust according to your GPU numbers and memory size.
+let BATCH_SIZE=ALL_BATCH_SIZE/NUM_GPU/GRAD_ACCUM_STEPS
+
+
+cd $CODE_PATH && sh distributed_train.sh $NUM_GPU $DATA_PATH \
+--model convformer_s36 --opt adamw --lr 5e-5 --sched None \
+-b $BATCH_SIZE --grad-accum-steps $GRAD_ACCUM_STEPS \
+--initial-checkpoint $INIT_CKPT \
+--mixup 0 --cutmix 0 \
+--model-ema --model-ema-decay 0.9999 \
+--drop-path 0.5 --head-dropout 0.4
