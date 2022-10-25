@@ -125,7 +125,7 @@ We use batch size of 4096 by default and we show how to train models with 8 GPUs
 
 ```bash
 DATA_PATH=/path/to/imagenet
-CODE_PATH=/path/to/code/metaformer # modeify code path here
+CODE_PATH=/path/to/code/metaformer # modify code path here
 
 
 ALL_BATCH_SIZE=4096
