@@ -93,7 +93,7 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 | identityformer_s24 | 224 | 21.3M | 3.4G |  78.2 | [here](https://drive.google.com/file/d/1Q6TG-4pTG-HPRmxsjhGd6XKOWy5dGj0g/view?usp=sharing) |
 | identityformer_s36 | 224 | 30.8M | 5.0G |  79.3 | [here](https://drive.google.com/file/d/13T0BruraT4k4Z9l_XzKpIxXMwWKCWnDy/view?usp=sharing) |
 | identityformer_m36 | 224 | 56.1M | 8.8G |  80.0 | [here](https://drive.google.com/file/d/1-lBG5i6zQRruStH3QJ3pK7lzIL1QiA0d/view?usp=sharing) |
-| identityformer_m48 | 224 | 73.3 | 11.5G |  80.4 | [here](https://drive.google.com/file/d/1tWP9bdX_sAUt7mPhEJO9acjSu_tz7dpo/view?usp=sharing) |
+| identityformer_m48 | 224 | 73.3M | 11.5G |  80.4 | [here](https://drive.google.com/file/d/1tWP9bdX_sAUt7mPhEJO9acjSu_tz7dpo/view?usp=sharing) |
 | randformer_s12 | 224 | 11.9 + <u>0.2</u>M | 1.9G |  74.6 | [here](https://drive.google.com/file/d/14_xyFSn3jp-K2B1x4gBY7XEmeCntcV24/view?usp=sharing) |
 | randformer_s24 | 224 | 21.3 + <u>0.5</u>M | 3.5G |  78.2 | [here](https://drive.google.com/file/d/1rzkTiV7Q8_YhHjnUk7upVHI-O8kJTMo2/view?usp=sharing) |
 | randformer_s36 | 224 | 30.8 + <u>0.7</u>M | 5.2G |  79.3 | [here](https://drive.google.com/file/d/16p5hUvO626Uo1amNyG0PUsKi7nPgvLq3/view?usp=sharing) |
@@ -103,7 +103,7 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 | poolformerv2_s24 | 224 | 21.3M | 3.4G |  80.7 | [here](https://drive.google.com/file/d/1pZzKAoloY0-ph7eflFGvJrCB_c09IXta/view?usp=sharing) |
 | poolformerv2_s36 | 224 | 30.8M | 5.0G |  81.6 | [here](https://drive.google.com/file/d/1Z09FBpbF_reAKjtjf_w_e5JGHN8968S_/view?usp=sharing) |
 | poolformerv2_m36 | 224 | 56.1M | 8.8G |  82.2 | [here](https://drive.google.com/file/d/1LDG0b19p4p8CywfRtI-qDVDxd1SUf6s5/view?usp=sharing) |
-| poolformerv2_m48 | 224 | 73.3 | 11.5G |  82.6 | [here](https://drive.google.com/file/d/1afJe393F_HG5BcGDwkW3bleqvHpYLNHT/view?usp=sharing) |
+| poolformerv2_m48 | 224 | 73.3M | 11.5G |  82.6 | [here](https://drive.google.com/file/d/1afJe393F_HG5BcGDwkW3bleqvHpYLNHT/view?usp=sharing) |
 
 The underlined numbers mean the numbers of parameters that are frozen after random initialization.
 
