@@ -35,105 +35,105 @@ def _cfg(url='', **kwargs):
         **kwargs
     }
 
-# Urls will be added soon.
+
 default_cfgs = {
     'identityformer_s12': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/identityformer/identityformer_s12.pth'),
     'identityformer_s24': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/identityformer/identityformer_s24.pth'),
     'identityformer_s36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/identityformer/identityformer_s36.pth'),
     'identityformer_m36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/identityformer/identityformer_m36.pth'),
     'identityformer_m48': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/identityformer/identityformer_m48.pth'),
 
 
     'randformer_s12': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/randformer/randformer_s12.pth'),
     'randformer_s24': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/randformer/randformer_s24.pth'),
     'randformer_s36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/randformer/randformer_s36.pth'),
     'randformer_m36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/randformer/randformer_m36.pth'),
     'randformer_m48': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/randformer/randformer_m48.pth'),
 
     'poolformerv2_s12': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/poolformerv2/poolformerv2_s12.pth'),
     'poolformerv2_s24': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/poolformerv2/poolformerv2_s24.pth'),
     'poolformerv2_s36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/poolformerv2/poolformerv2_s36.pth'),
     'poolformerv2_m36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/poolformerv2/poolformerv2_m36.pth'),
     'poolformerv2_m48': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/poolformerv2/poolformerv2_m48.pth'),
 
 
     'convformer_s18': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_s18.pth'),
     'convformer_s18_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_s18_384.pth',
         input_size=(3, 384, 384)),
     'convformer_s36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_s36.pth'),
     'convformer_s36_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_s36_384.pth',
         input_size=(3, 384, 384)),
     'convformer_m36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_m36.pth'),
     'convformer_m36_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_m36_384.pth',
         input_size=(3, 384, 384)),
     'convformer_b36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_b36.pth'),
     'convformer_b36_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_b36_384.pth',
         input_size=(3, 384, 384)),
 
     'convformer_b36_in21ft1k': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_b36_in21ft1k.pth'),
     'convformer_b36_384_in21ft1k': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_b36_384_in21ft1k.pth',
         input_size=(3, 384, 384)),
 
     'convformer_b36_in21k': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/convformer/convformer_b36_in21k.pth',
         num_classes=21841),
 
 
 
     'caformer_s18': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_s18.pth'),
     'caformer_s18_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_s18_384.pth',
         input_size=(3, 384, 384)),
     'caformer_s36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_s36.pth'),
     'caformer_s36_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_s36_384.pth',
         input_size=(3, 384, 384)),
     'caformer_m36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_m36.pth'),
     'caformer_m36_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_m36_384.pth',
         input_size=(3, 384, 384)),
     'caformer_b36': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_b36.pth'),
     'caformer_b36_384': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_b36_384.pth',
         input_size=(3, 384, 384)),
 
     'caformer_b36_in21ft1k': _cfg(
-        url=''),
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_b36_in21ft1k.pth'),
     'caformer_b36_384_in21ft1k': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_b36_384_in21ft1k.pth',
         input_size=(3, 384, 384)),
 
     'caformer_b36_in21k': _cfg(
-        url='',
+        url='https://huggingface.co/whyu/dl/resolve/main/caformer/caformer_b36_in21k.pth',
         num_classes=21841),
 }
 
@@ -568,6 +568,10 @@ def identityformer_s12(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['identityformer_s12']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -580,6 +584,10 @@ def identityformer_s24(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['identityformer_s24']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -592,6 +600,10 @@ def identityformer_s36(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['identityformer_s36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -604,6 +616,10 @@ def identityformer_m36(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['identityformer_m36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -616,6 +632,10 @@ def identityformer_m48(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['identityformer_m48']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -628,6 +648,10 @@ def randformer_s12(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['randformer_s12']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -640,6 +664,10 @@ def randformer_s24(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['randformer_s24']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -652,6 +680,10 @@ def randformer_s36(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['randformer_s36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -664,6 +696,10 @@ def randformer_m36(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['randformer_m36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -676,6 +712,10 @@ def randformer_m48(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['randformer_m48']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -689,6 +729,10 @@ def poolformerv2_s12(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['poolformerv2_s12']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -701,6 +745,10 @@ def poolformerv2_s24(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['poolformerv2_s24']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -713,6 +761,10 @@ def poolformerv2_s36(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['poolformerv2_s36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -725,6 +777,10 @@ def poolformerv2_m36(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['poolformerv2_m36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -737,6 +793,10 @@ def poolformerv2_m48(pretrained=False, **kwargs):
         norm_layers=partial(LayerNormGeneral, normalized_dim=(1, 2, 3), eps=1e-6, bias=False),
         **kwargs)
     model.default_cfg = default_cfgs['poolformerv2_m48']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -749,6 +809,10 @@ def convformer_s18(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_s18']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -761,6 +825,10 @@ def convformer_s18_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_s18_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -773,6 +841,10 @@ def convformer_s36(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_s36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -785,6 +857,10 @@ def convformer_s36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_s36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -797,6 +873,10 @@ def convformer_m36(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_m36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -809,6 +889,10 @@ def convformer_m36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_m36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -821,6 +905,10 @@ def convformer_b36(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_b36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -833,6 +921,10 @@ def convformer_b36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_b36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -845,6 +937,10 @@ def convformer_b36_in21ft1k(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_b36_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -857,6 +953,10 @@ def convformer_b36_384_in21ft1k(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_b36_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -869,6 +969,10 @@ def convformer_b36_in21k(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_b36_in21k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -881,6 +985,10 @@ def caformer_s18(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_s18']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -893,6 +1001,10 @@ def caformer_s18_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_s18_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -905,6 +1017,10 @@ def caformer_s36(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_s36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -917,6 +1033,10 @@ def caformer_s36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_s36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -929,6 +1049,10 @@ def caformer_m36(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_s36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -941,6 +1065,10 @@ def caformer_m36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_s36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -953,6 +1081,10 @@ def caformer_b36(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_b36']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -965,6 +1097,10 @@ def caformer_b36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_b36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -977,6 +1113,10 @@ def caformer_b36_in21ft1k(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_b36_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -989,6 +1129,10 @@ def caformer_b36_384_in21ft1k(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_b36_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
 
 
@@ -1001,4 +1145,8 @@ def caformer_b36_in21k(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_b36_in21k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
     return model
