@@ -1,6 +1,6 @@
 # [MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452)
 
-<p align="center">
+<p align="left">
 <a href="https://arxiv.org/abs/2210.13452" alt="arXiv">
     <img src="https://img.shields.io/badge/arXiv-2210.13452-b31b1b.svg?style=flat" /></a>
 <a href="https://colab.research.google.com/github/sail-sg/metaformer/blob/main/misc/demo_metaformer_baselines.ipynb" alt="Colab">
