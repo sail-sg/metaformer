@@ -581,6 +581,8 @@ def main():
 
     total_batch_size = args.batch_size * args.grad_accum_steps * args.world_size
     num_training_steps_per_epoch = len(dataset_train) // total_batch_size
+    if args.local_rank == 0:
+        _logger.info('Total batch size: {}'.format(total_batch_size))
 
     # setup mixup / cutmix
     collate_fn = None

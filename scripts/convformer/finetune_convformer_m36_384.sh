@@ -9,7 +9,7 @@ let BATCH_SIZE=ALL_BATCH_SIZE/NUM_GPU/GRAD_ACCUM_STEPS
 
 
 cd $CODE_PATH && sh distributed_train.sh $NUM_GPU $DATA_PATH \
---model convformer_m36 --opt adamw --lr 5e-5 --sched None \
+--model convformer_m36_384 --opt adamw --lr 5e-5 --sched None \
 -b $BATCH_SIZE --grad-accum-steps $GRAD_ACCUM_STEPS \
 --initial-checkpoint $INIT_CKPT \
 --mixup 0 --cutmix 0 \
