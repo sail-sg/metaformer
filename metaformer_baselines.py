@@ -1048,7 +1048,7 @@ def caformer_m36(pretrained=False, **kwargs):
         token_mixers=[SepConv, SepConv, Attention, Attention],
         head_fn=MlpHead,
         **kwargs)
-    model.default_cfg = default_cfgs['caformer_s36']
+    model.default_cfg = default_cfgs['caformer_m36']
     if pretrained:
         state_dict = torch.hub.load_state_dict_from_url(
             url= model.default_cfg['url'], map_location="cpu", check_hash=True)
@@ -1064,7 +1064,7 @@ def caformer_m36_384(pretrained=False, **kwargs):
         token_mixers=[SepConv, SepConv, Attention, Attention],
         head_fn=MlpHead,
         **kwargs)
-    model.default_cfg = default_cfgs['caformer_s36_384']
+    model.default_cfg = default_cfgs['caformer_m36_384']
     if pretrained:
         state_dict = torch.hub.load_state_dict_from_url(
             url= model.default_cfg['url'], map_location="cpu", check_hash=True)
