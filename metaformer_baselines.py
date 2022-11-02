@@ -489,10 +489,11 @@ class MetaFormer(nn.Module):
         num_stage = len(depths)
         self.num_stage = num_stage
 
-        assert isinstance(downsample_layers, (list, tuple))
+        if not isinstance(downsample_layers, (list, tuple)):
+            downsample_layers = [downsample_layers] * num_stage
+        down_dims = [in_chans] + dims
         self.downsample_layers = nn.ModuleList(
-            [downsample_layers[0](in_chans, dims[0])] + \
-            [downsample_layers[i+1](dims[i], dims[i+1]) for i in range(num_stage - 1)]
+            [downsample_layers[i](down_dims[i], down_dims[i+1]) for i in range(num_stage)]
         )
         
         if not isinstance(token_mixers, (list, tuple)):
@@ -511,7 +512,7 @@ class MetaFormer(nn.Module):
         if not isinstance(res_scale_init_values, (list, tuple)):
             res_scale_init_values = [res_scale_init_values] * num_stage
 
-        self.stages = nn.ModuleList() # 4 feature resolution stages, each consisting of multiple residual blocks
+        self.stages = nn.ModuleList() # each stage consists of multiple metaformer blocks
         cur = 0
         for i in range(num_stage):
             stage = nn.Sequential(
