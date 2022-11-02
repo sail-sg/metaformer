@@ -425,7 +425,7 @@ class MetaFormerBlock(nn.Module):
 
 
 r"""
-downsampling (stem) for the first stage is a layer of conv with k4, s4 and p2
+downsampling (stem) for the first stage is a layer of conv with k7, s4 and p2
 downsampling (stem) for the last 3 stages is a layer of conv with k3, s2 and p1
 DOWNSAMPLE_LAYERS_FOUR_STAGES format: [Downsampling, Downsampling, Downsampling, Downsampling]
 use `partial` to specify some arguments
