@@ -259,7 +259,37 @@ class RandomMixing(nn.Module):
 
 
 class LayerNormGeneral(nn.Module):
-    r""" General layerNorm for different situations
+    r""" General LayerNorm for different situations.
+
+    Args:
+        affine_shape (int, list or tuple): The shape of affine weight and bias.
+            Usually the affine_shape=C, but in some implementation, like torch.nn.LayerNorm,
+            the affine_shape is the same as normalized_dim by default. 
+            To adapt to different situations, we offer this argument here.
+        normalized_dim (tuple or list): Which dims to compute mean and variance. 
+        scale (bool): Flag indicates whether to use scale or not.
+        bias (bool): Flag indicates whether to use scale or not.
+
+        We give several examples to show how to specify the arguments.
+
+        LayerNorm (https://arxiv.org/abs/1607.06450):
+            For input shape of (B, *, C) like (B, N, C) or (B, H, W, C),
+                affine_shape=C, normalized_dim=(-1, ), scale=True, bias=True;
+            For input shape of (B, C, H, W),
+                affine_shape=(C, 1, 1), normalized_dim=(1, ), scale=True, bias=True.
+
+        Modified LayerNorm (https://arxiv.org/abs/2111.11418)
+            that is idental to partial(torch.nn.GroupNorm, num_groups=1):
+            For input shape of (B, N, C),
+                affine_shape=C, normalized_dim=(1, 2), scale=True, bias=True;
+            For input shape of (B, H, W, C),
+                affine_shape=C, normalized_dim=(1, 2, 3), scale=True, bias=True;
+            For input shape of (B, C, H, W),
+                affine_shape=(C, 1, 1), normalized_dim=(1, 2, 3), scale=True, bias=True.
+
+        For the several metaformer baslines,
+            IdentityFormer, RandFormer and PoolFormerV2 utilize Modified LayerNorm without bias (bias=False);
+            ConvFormer and CAFormer utilizes LayerNorm without bias (bias=False).
     """
     def __init__(self, affine_shape=None, normalized_dim=(-1, ), scale=True, 
         bias=True, eps=1e-5):
@@ -329,7 +359,7 @@ class Pooling(nn.Module):
 
 
 class Mlp(nn.Module):
-    """ MLP as used in Vision Transformer, MLP-Mixer and related networks
+    """ MLP as used in MetaFormer models, eg Transformer, MLP-Mixer, PoolFormer, metaformer baslines and related networks.
     Mostly copied from timm.
     """
     def __init__(self, dim, mlp_ratio=4, out_features=None, act_layer=StarReLU, drop=0., bias=False, **kwargs):
@@ -382,12 +412,10 @@ class MetaFormerBlock(nn.Module):
     Implementation of one MetaFormer block.
     """
     def __init__(self, dim,
-                 token_mixer=nn.Identity,
-                 mlp=Mlp,
+                 token_mixer=nn.Identity, mlp=Mlp,
                  norm_layer=nn.LayerNorm,
                  drop=0., drop_path=0.,
-                 layer_scale_init_value=None, res_scale_init_value=None,
-                 scale_trainable=True, 
+                 layer_scale_init_value=None, res_scale_init_value=None
                  ):
 
         super().__init__()
@@ -395,9 +423,9 @@ class MetaFormerBlock(nn.Module):
         self.norm1 = norm_layer(dim)
         self.token_mixer = token_mixer(dim=dim, drop=drop)
         self.drop_path1 = DropPath(drop_path) if drop_path > 0. else nn.Identity()
-        self.layer_scale1 = Scale(dim=dim, init_value=layer_scale_init_value, trainable=scale_trainable) \
+        self.layer_scale1 = Scale(dim=dim, init_value=layer_scale_init_value) \
             if layer_scale_init_value else nn.Identity()
-        self.res_scale1 = Scale(dim=dim, init_value=res_scale_init_value, trainable=scale_trainable) \
+        self.res_scale1 = Scale(dim=dim, init_value=res_scale_init_value) \
             if res_scale_init_value else nn.Identity()
 
         self.norm2 = norm_layer(dim)
@@ -426,7 +454,7 @@ class MetaFormerBlock(nn.Module):
 
 r"""
 downsampling (stem) for the first stage is a layer of conv with k7, s4 and p2
-downsampling (stem) for the last 3 stages is a layer of conv with k3, s2 and p1
+downsamplings for the last 3 stages is a layer of conv with k3, s2 and p1
 DOWNSAMPLE_LAYERS_FOUR_STAGES format: [Downsampling, Downsampling, Downsampling, Downsampling]
 use `partial` to specify some arguments
 """
@@ -446,10 +474,10 @@ class MetaFormer(nn.Module):
           https://arxiv.org/pdf/2210.XXXXX.pdf
 
     Args:
-        in_chans (int): Number of input image channels. Default: 3
-        num_classes (int): Number of classes for classification head. Default: 1000
-        depths (list or tuple): Number of blocks at each stage. Default: [2, 2, 6, 2]
-        dims (int): Feature dimension at each stage. Default: [64, 128, 320, 512]
+        in_chans (int): Number of input image channels. Default: 3.
+        num_classes (int): Number of classes for classification head. Default: 1000.
+        depths (list or tuple): Number of blocks at each stage. Default: [2, 2, 6, 2].
+        dims (int): Feature dimension at each stage. Default: [64, 128, 320, 512].
         downsample_layers: (list or tuple): Downsampling layers before each stage.
         token_mixers (list, tuple or token_fcn): Token mixer for each stage. Default: nn.Identity.
         mlps (list, tuple or mlp_fcn): Mlp for each stage. Default: Mlp.

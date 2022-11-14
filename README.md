@@ -64,8 +64,8 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 | caformer_s36_384 | 384 | 39M | 26.0G |  85.7 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_384.pth) |
 | caformer_m36 | 224 | 56M | 13.2G |  85.2 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36.pth) |
 | caformer_m36_384 | 384 | 56M | 42.0G |  86.2 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_384.pth) |
-| caformer_b36 | 224 | 99M | 23.2G |  85.5 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36.pth) |
-| caformer_b36_384 | 384 | 99M | 72.2G |  86.4 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_384.pth) |
+| caformer_b36 | 224 | 99M | 23.2G |  **85.5**\* | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36.pth) |
+| caformer_b36_384 | 384 | 99M | 72.2G |  **86.4** | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_384.pth) |
 | convformer_s18 | 224 | 27M | 3.9G |  83.0 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18.pth) |
 | convformer_s18_384 | 384 | 27M | 11.6G |  84.4 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_384.pth) |
 | convformer_s36 | 224 | 40M | 7.6G |  84.1 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36.pth) |
@@ -75,6 +75,7 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 | convformer_b36 | 224 | 100M | 22.6G |  84.8 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36.pth) |
 | convformer_b36_384 | 384 | 100M | 66.5G |  85.7 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_384.pth) |
 
+:astonished: :astonished: \* To the best of our knowledge, the model sets a new record on ImageNet-1K with the accuracy of 85.5% at 224x224 resolution under normal supervised setting (without external data or distillation).
 
 ### Models with common token mixers pretrained on ImageNet-21K and finetuned on ImgeNet-1K
 | Model | Resolution | Params | MACs | Top1 Acc | Download |
@@ -100,11 +101,11 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 | identityformer_s36 | 224 | 30.8M | 5.0G |  79.3 | [here](https://huggingface.co/sail/dl/resolve/main/identityformer/identityformer_s36.pth) |
 | identityformer_m36 | 224 | 56.1M | 8.8G |  80.0 | [here](https://huggingface.co/sail/dl/resolve/main/identityformer/identityformer_m36.pth) |
 | identityformer_m48 | 224 | 73.3M | 11.5G |  80.4 | [here](https://huggingface.co/sail/dl/resolve/main/identityformer/identityformer_m48.pth) |
-| randformer_s12 | 224 | 11.9 + <ins>0.2</ins>M | 1.9G |  74.6 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_s12.pth) |
+| randformer_s12 | 224 | 11.9 + <ins>0.2</ins>M | 1.9G |  76.6 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_s12.pth) |
 | randformer_s24 | 224 | 21.3 + <ins>0.5</ins>M | 3.5G |  78.2 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_s24.pth) |
-| randformer_s36 | 224 | 30.8 + <ins>0.7</ins>M | 5.2G |  79.3 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_s36.pth) |
-| randformer_m36 | 224 | 56.1 + <ins>0.7</ins>M | 9.0G |  80.0 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_m36.pth) |
-| randformer_m48 | 224 | 73.3 + <ins>0.9</ins>M | 11.9G |  80.4 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_m48.pth) |
+| randformer_s36 | 224 | 30.8 + <ins>0.7</ins>M | 5.2G |  79.5 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_s36.pth) |
+| randformer_m36 | 224 | 56.1 + <ins>0.7</ins>M | 9.0G |  81.2 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_m36.pth) |
+| randformer_m48 | 224 | 73.3 + <ins>0.9</ins>M | 11.9G |  81.4 | [here](https://huggingface.co/sail/dl/resolve/main/randformer/randformer_m48.pth) |
 | poolformerv2_s12 | 224 | 11.9M | 1.8G |  78.0 | [here](https://huggingface.co/sail/dl/resolve/main/poolformerv2/poolformerv2_s12.pth) |
 | poolformerv2_s24 | 224 | 21.3M | 3.4G |  80.7 | [here](https://huggingface.co/sail/dl/resolve/main/poolformerv2/poolformerv2_s24.pth) |
 | poolformerv2_s36 | 224 | 30.8M | 5.0G |  81.6 | [here](https://huggingface.co/sail/dl/resolve/main/poolformerv2/poolformerv2_s36.pth) |
@@ -113,6 +114,7 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 
 The underlined numbers mean the numbers of parameters that are frozen after random initialization.
 
+The checkpoints can also be found in [Baidu Disk](https://pan.baidu.com/s/1qJ-MHbuQyEdN7a6DJY9RFg?pwd=meta).
 
 #### Usage
 We also provide a Colab notebook which run the steps to perform inference with MetaFormer baselines: [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sail-sg/metaformer/blob/main/misc/demo_metaformer_baselines.ipynb)
