@@ -359,7 +359,7 @@ class Pooling(nn.Module):
 
 
 class Mlp(nn.Module):
-    """ MLP as used in MetaFormer models, eg Transformer, MLP-Mixer, PoolFormer, metaformer baslines and related networks.
+    """ MLP as used in MetaFormer models, eg Transformer, MLP-Mixer, PoolFormer, MetaFormer baslines and related networks.
     Mostly copied from timm.
     """
     def __init__(self, dim, mlp_ratio=4, out_features=None, act_layer=StarReLU, drop=0., bias=False, **kwargs):
@@ -471,7 +471,7 @@ DOWNSAMPLE_LAYERS_FOUR_STAGES = [partial(Downsampling,
 class MetaFormer(nn.Module):
     r""" MetaFormer
         A PyTorch impl of : `MetaFormer Baselines for Vision`  -
-          https://arxiv.org/pdf/2210.XXXXX.pdf
+          https://arxiv.org/abs/2210.13452
 
     Args:
         in_chans (int): Number of input image channels. Default: 3.
