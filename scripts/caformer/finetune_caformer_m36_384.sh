@@ -9,7 +9,7 @@ let BATCH_SIZE=ALL_BATCH_SIZE/NUM_GPU/GRAD_ACCUM_STEPS
 
 
 cd $CODE_PATH && sh distributed_train.sh $NUM_GPU $DATA_PATH \
---model caformer_s18_384 --opt lamb --lr 1e-4 --sched None \
+--model caformer_s18_384 --epoch 30 --opt lamb --lr 1e-4 --sched None \
 -b $BATCH_SIZE --grad-accum-steps $GRAD_ACCUM_STEPS \
 --initial-checkpoint $INIT_CKPT \
 --mixup 0 --cutmix 0 \
