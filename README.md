@@ -77,7 +77,7 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 
 :astonished: :astonished: \* To the best of our knowledge, the model sets a new record on ImageNet-1K with the accuracy of 85.5% at 224x224 resolution under normal supervised setting (without external data or distillation).
 
-### Models with common token mixers pretrained on ImageNet-21K and finetuned on ImgeNet-1K
+### Models with common token mixers pretrained on ImageNet-21K and finetuned on ImgeNet-1K (More 21K pretrained models will be released before 10 December)
 | Model | Resolution | Params | MACs | Top1 Acc | Download |
 | :---     |   :---:    |  :---: |  :---:  |  :---:  |  :---:  |
 | caformer_b36_in21ft1k | 224 | 99M | 23.2G |  87.4 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_in21ft1k.pth) |
