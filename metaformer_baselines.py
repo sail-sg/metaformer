@@ -72,37 +72,62 @@ default_cfgs = {
         url='https://huggingface.co/sail/dl/resolve/main/poolformerv2/poolformerv2_m48.pth'),
 
 
+
     'convformer_s18': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18.pth'),
     'convformer_s18_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_384.pth',
         input_size=(3, 384, 384)),
+    'convformer_s18_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_in21ft1k.pth'),
+    'convformer_s18_384_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_384_in21ft1k.pth',
+        input_size=(3, 384, 384)),
+    'convformer_s18_in21k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_in21k.pth',
+        num_classes=21841),
+
     'convformer_s36': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36.pth'),
     'convformer_s36_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_384.pth',
         input_size=(3, 384, 384)),
+    'convformer_s36_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_in21ft1k.pth'),
+    'convformer_s36_384_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_384_in21ft1k.pth',
+        input_size=(3, 384, 384)),
+    'convformer_s36_in21k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_in21k.pth',
+        num_classes=21841),
+
     'convformer_m36': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36.pth'),
     'convformer_m36_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_384.pth',
         input_size=(3, 384, 384)),
+    'convformer_m36_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_in21ft1k.pth'),
+    'convformer_m36_384_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_384_in21ft1k.pth',
+        input_size=(3, 384, 384)),
+    'convformer_m36_in21k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_in21k.pth',
+        num_classes=21841),
+
     'convformer_b36': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36.pth'),
     'convformer_b36_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_384.pth',
         input_size=(3, 384, 384)),
-
     'convformer_b36_in21ft1k': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_in21ft1k.pth'),
     'convformer_b36_384_in21ft1k': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_384_in21ft1k.pth',
         input_size=(3, 384, 384)),
-
     'convformer_b36_in21k': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_in21k.pth',
         num_classes=21841),
-
 
 
     'caformer_s18': _cfg(
@@ -110,28 +135,53 @@ default_cfgs = {
     'caformer_s18_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_384.pth',
         input_size=(3, 384, 384)),
+    'caformer_s18_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_in21ft1k.pth'),
+    'caformer_s18_384_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_384_in21ft1k.pth',
+        input_size=(3, 384, 384)),
+    'caformer_s18_in21k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_in21k.pth',
+        num_classes=21841),
+
     'caformer_s36': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36.pth'),
     'caformer_s36_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_384.pth',
         input_size=(3, 384, 384)),
+    'caformer_s36_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_in21ft1k.pth'),
+    'caformer_s36_384_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_384_in21ft1k.pth',
+        input_size=(3, 384, 384)),
+    'caformer_s36_in21k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_in21k.pth',
+        num_classes=21841),
+
     'caformer_m36': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36.pth'),
     'caformer_m36_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_384.pth',
         input_size=(3, 384, 384)),
+    'caformer_m36_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_in21ft1k.pth'),
+    'caformer_m36_384_in21ft1k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_384_in21ft1k.pth',
+        input_size=(3, 384, 384)),
+    'caformer_m36_in21k': _cfg(
+        url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_in21k.pth',
+        num_classes=21841),
+
     'caformer_b36': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36.pth'),
     'caformer_b36_384': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_384.pth',
         input_size=(3, 384, 384)),
-
     'caformer_b36_in21ft1k': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_in21ft1k.pth'),
     'caformer_b36_384_in21ft1k': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_384_in21ft1k.pth',
         input_size=(3, 384, 384)),
-
     'caformer_b36_in21k': _cfg(
         url='https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_in21k.pth',
         num_classes=21841),
@@ -862,6 +912,54 @@ def convformer_s18_384(pretrained=False, **kwargs):
 
 
 @register_model
+def convformer_s18_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 3, 9, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_s18_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_s18_384_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 3, 9, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_s18_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_s18_in21k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 3, 9, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_s18_in21k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
 def convformer_s36(pretrained=False, **kwargs):
     model = MetaFormer(
         depths=[3, 12, 18, 3],
@@ -894,6 +992,54 @@ def convformer_s36_384(pretrained=False, **kwargs):
 
 
 @register_model
+def convformer_s36_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_s36_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_s36_384_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_s36_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_s36_in21k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_s36_in21k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
 def convformer_m36(pretrained=False, **kwargs):
     model = MetaFormer(
         depths=[3, 12, 18, 3],
@@ -918,6 +1064,54 @@ def convformer_m36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['convformer_m36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_m36_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[96, 192, 384, 576],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_m36_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_m36_384_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[96, 192, 384, 576],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_m36_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def convformer_m36_in21k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[96, 192, 384, 576],
+        token_mixers=SepConv,
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['convformer_m36_in21k']
     if pretrained:
         state_dict = torch.hub.load_state_dict_from_url(
             url= model.default_cfg['url'], map_location="cpu", check_hash=True)
@@ -1038,6 +1232,54 @@ def caformer_s18_384(pretrained=False, **kwargs):
 
 
 @register_model
+def caformer_s18_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 3, 9, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_s18_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_s18_384_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 3, 9, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_s18_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_s18_in21k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 3, 9, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_s18_in21k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
 def caformer_s36(pretrained=False, **kwargs):
     model = MetaFormer(
         depths=[3, 12, 18, 3],
@@ -1070,6 +1312,54 @@ def caformer_s36_384(pretrained=False, **kwargs):
 
 
 @register_model
+def caformer_s36_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_s36_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_s36_384_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_s36_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_s36_in21k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[64, 128, 320, 512],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_s36_in21k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
 def caformer_m36(pretrained=False, **kwargs):
     model = MetaFormer(
         depths=[3, 12, 18, 3],
@@ -1094,6 +1384,54 @@ def caformer_m36_384(pretrained=False, **kwargs):
         head_fn=MlpHead,
         **kwargs)
     model.default_cfg = default_cfgs['caformer_m36_384']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_m36_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[96, 192, 384, 576],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_m36_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_m36_384_in21ft1k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[96, 192, 384, 576],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_m36_384_in21ft1k']
+    if pretrained:
+        state_dict = torch.hub.load_state_dict_from_url(
+            url= model.default_cfg['url'], map_location="cpu", check_hash=True)
+        model.load_state_dict(state_dict)
+    return model
+
+
+@register_model
+def caformer_m364_in21k(pretrained=False, **kwargs):
+    model = MetaFormer(
+        depths=[3, 12, 18, 3],
+        dims=[96, 192, 384, 576],
+        token_mixers=[SepConv, SepConv, Attention, Attention],
+        head_fn=MlpHead,
+        **kwargs)
+    model.default_cfg = default_cfgs['caformer_m364_in21k']
     if pretrained:
         state_dict = torch.hub.load_state_dict_from_url(
             url= model.default_cfg['url'], map_location="cpu", check_hash=True)

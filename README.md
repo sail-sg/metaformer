@@ -77,20 +77,38 @@ Data preparation: ImageNet with the following folder structure, you can extract 
 
 :astonished: :astonished: \* To the best of our knowledge, the model sets a new record on ImageNet-1K with the accuracy of 85.5% at 224x224 resolution under normal supervised setting (without external data or distillation).
 
-### Models with common token mixers pretrained on ImageNet-21K and finetuned on ImgeNet-1K (More 21K pretrained models will be released before 10 December)
+### Models with common token mixers pretrained on ImageNet-21K and finetuned on ImgeNet-1K
 | Model | Resolution | Params | MACs | Top1 Acc | Download |
 | :---     |   :---:    |  :---: |  :---:  |  :---:  |  :---:  |
+| caformer_s18_in21ft1k | 224 | 26M | 4.1G |  84.1 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_in21ft1k.pth) |
+| caformer_s18_384_in21ft1k | 384 | 26M | 13.4G |  85.4 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_384_in21ft1k.pth) |
+| caformer_s36_in21ft1k | 224 | 39M | 8.0G |  85.8 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_in21ft1k.pth) |
+| caformer_s36_384_in21ft1k | 384 | 39M | 26.0G |  86.9 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_384_in21ft1k.pth) |
+| caformer_m36_in21ft1k | 224 | 56M | 13.2G |  86.6 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_in21ft1k.pth) |
+| caformer_m36_384_in21ft1k | 384 | 56M | 42.0G |  87.5 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_384_in21ft1k.pth) |
 | caformer_b36_in21ft1k | 224 | 99M | 23.2G |  87.4 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_in21ft1k.pth) |
 | caformer_b36_384_in21ft1k | 384 | 99M | 72.2G |  88.1 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_384_in21ft1k.pth) |
+| convformer_s18_in21ft1k | 224 | 27M | 3.9G |  83.7 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_in21ft1k.pth) |
+| convformer_s18_384_in21ft1k | 384 | 27M | 11.6G |  85.0 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_384_in21ft1k.pth) |
+| convformer_s36_in21ft1k | 224 | 40M | 7.6G |  85.4 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_in21ft1k.pth) |
+| convformer_s36_384_in21ft1k | 384 | 40M | 22.4G |  86.4 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_384_in21ft1k.pth) |
+| convformer_m36_in21ft1k | 224 | 57M | 12.8G |  86.1 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_in21ft1k.pth) |
+| convformer_m36_384_in21ft1k | 384 | 57M | 37.7G |  86.9 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_384_in21ft1k.pth) |
 | convformer_b36_in21ft1k | 224 | 100M | 22.6G |  87.0 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_in21ft1k.pth) |
 | convformer_b36_384_in21kft1k | 384 | 100M | 66.5G |  87.6 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_384_in21ft1k.pth) |
 
 
 ### Models with common token mixers pretrained on ImageNet-21K
-| Model | Resolution | Params | MACs | Download |
-| :---     |   :---:    |  :---: |  :---:  |  :---:  |
-| caformer_b36_in21k | 224 | 99M | 23.2G | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_in21k.pth) |
-| convformer_b36_in21k | 224 | 100M | 22.6G | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_in21k.pth) |
+| Model | Resolution |  Download |
+| :---     |   :---:    |  :---:  |
+| caformer_s18_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s18_in21k.pth) |
+| caformer_s36_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_s36_in21k.pth) |
+| caformer_m36_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_m36_in21k.pth) |
+| caformer_b36_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/caformer/caformer_b36_in21k.pth) |
+| convformer_s18_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s18_in21k.pth) |
+| convformer_s36_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_s36_in21k.pth) |
+| convformer_m36_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_m36_in21k.pth) |
+| convformer_b36_in21k | 224 | [here](https://huggingface.co/sail/dl/resolve/main/convformer/convformer_b36_in21k.pth) |
 
 
 ### Models with basic token mixers trained on ImageNet-1K
