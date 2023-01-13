@@ -7,7 +7,7 @@
     <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 </p>
 
-This is a PyTorch implementation of several MetaFormer baslines including **IdentityFormer**, **RandFormer**, **RandFormer** and **CAFormer** proposed by our paper "[MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452)".
+This is a PyTorch implementation of several MetaFormer baslines including **IdentityFormer**, **RandFormer**, **ConvFormer** and **CAFormer** proposed by our paper "[MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452)".
 
 ![Figure1](https://user-images.githubusercontent.com/49296856/197580831-fc937e24-9941-4794-b99d-822748fa0f11.png)
 Figure 1: **Performance of MetaFormer baselines and other state-of-the-art models on ImageNet-1K at 224x224 resolution.** The architectures of our proposed models are shown in Figure 2. (a) IdentityFormer/RandFormer achieve over 80%/81% accuracy, indicating MetaFormer has solid lower bound of performance and works well on arbitrary token mixers. The accuracy of well-trained ResNet-50 is from "ResNet strikes back". (b) Without novel token mixers, pure CNN-based ConvFormer outperforms ConvNeXt, while CAFormer sets a new record of 85.5% accuracy on ImageNet-1K at 224x224 resolution under normal supervised training without external data or distillation.
@@ -22,7 +22,7 @@ Figure 2: **(a-d)  Overall frameworks of IdentityFormer, RandFormer, ConvFormer 
 ## Bibtex
 ```
 @article{yu2022metaformer,
-  title={MetaFormer Is Actually What You Need for Vision},
+  title={Metaformer baselines for vision},
   author={Yu, Weihao and Si, Chenyang and Zhou, Pan and Luo, Mi and Zhou, Yichen and Feng, Jiashi and Yan, Shuicheng and Wang, Xinchao},
   journal={arXiv preprint arXiv:2210.13452},
   year={2022}
