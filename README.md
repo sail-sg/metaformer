@@ -140,7 +140,7 @@ We also provide a Colab notebook which run the steps to perform inference with M
 
 ## Validation
 
-To evaluate our PoolFormer models, run:
+To evaluate our CAFormer-S18 models, run:
 
 ```bash
 MODEL=caformer_s18
