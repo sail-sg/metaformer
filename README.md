@@ -21,7 +21,7 @@ Figure 2: **(a-d)  Overall frameworks of IdentityFormer, RandFormer, ConvFormer 
 
 ## Bibtex
 ```
-@article{yu2022metaformer,
+@article{yu2022metaformer_baselines,
   title={Metaformer baselines for vision},
   author={Yu, Weihao and Si, Chenyang and Zhou, Pan and Luo, Mi and Zhou, Yichen and Feng, Jiashi and Yan, Shuicheng and Wang, Xinchao},
   journal={arXiv preprint arXiv:2210.13452},
