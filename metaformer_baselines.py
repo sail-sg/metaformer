@@ -20,6 +20,8 @@ Some implementations are modified from timm (https://github.com/rwightman/pytorc
 from functools import partial
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
+
 from timm.models.layers import trunc_normal_, DropPath
 from timm.models.registry import register_model
 from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
@@ -362,6 +364,23 @@ class LayerNormGeneral(nn.Module):
         return x
 
 
+class LayerNormWithoutBias(nn.Module):
+    """
+    Equal to partial(LayerNormGeneral, bias=False) but faster, 
+    because it directly utilizes otpimized F.layer_norm
+    """
+    def __init__(self, normalized_shape, eps=1e-5, **kwargs):
+        super().__init__()
+        self.eps = eps
+        self.bias = None
+        if isinstance(normalized_shape, int):
+            normalized_shape = (normalized_shape,)
+        self.weight = nn.Parameter(torch.ones(normalized_shape))
+        self.normalized_shape = normalized_shape
+    def forward(self, x):
+        return F.layer_norm(x, self.normalized_shape, weight=self.weight, bias=self.bias, eps=self.eps)
+
+
 class SepConv(nn.Module):
     r"""
     Inverted separable convolution from MobileNetV2: https://arxiv.org/abs/1801.04381.
@@ -547,7 +566,7 @@ class MetaFormer(nn.Module):
                  downsample_layers=DOWNSAMPLE_LAYERS_FOUR_STAGES,
                  token_mixers=nn.Identity,
                  mlps=Mlp,
-                 norm_layers=partial(LayerNormGeneral, eps=1e-6, bias=False),
+                 norm_layers=partial(LayerNormWithoutBias, eps=1e-6), # partial(LayerNormGeneral, eps=1e-6, bias=False),
                  drop_path_rate=0.,
                  head_dropout=0.0, 
                  layer_scale_init_values=None,

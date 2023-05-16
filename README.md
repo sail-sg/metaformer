@@ -18,17 +18,8 @@ Figure 2: **(a-d)  Overall frameworks of IdentityFormer, RandFormer, ConvFormer 
 ![Comparision](https://user-images.githubusercontent.com/49296856/197601575-6a19ed8c-7bc2-433b-895b-e5363358ea77.png)
 
 
-
-## Bibtex
-```
-@article{yu2022metaformer_baselines,
-  title={Metaformer baselines for vision},
-  author={Yu, Weihao and Si, Chenyang and Zhou, Pan and Luo, Mi and Zhou, Yichen and Feng, Jiashi and Yan, Shuicheng and Wang, Xinchao},
-  journal={arXiv preprint arXiv:2210.13452},
-  year={2022}
-}
-```
-
+### News
+Models of MetaFormer baselines are now integrated in [timm](https://github.com/huggingface/pytorch-image-models) by [Fredo Guan](https://github.com/fffffgggg54) and [Ross Wightman](https://github.com/rwightman). Many thanks!
 
 
 ## Requirements
@@ -174,3 +165,14 @@ Training (fine-tuning) scripts of other models are shown in [scripts](/scripts/)
 
 ## Acknowledgment
 Weihao Yu would like to thank TRC program and GCP research credits for the support of partial computational resources. Our implementation is based on the wonderful [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) codebase.
+
+
+## Bibtex
+```
+@article{yu2022metaformer_baselines,
+  title={Metaformer baselines for vision},
+  author={Yu, Weihao and Si, Chenyang and Zhou, Pan and Luo, Mi and Zhou, Yichen and Feng, Jiashi and Yan, Shuicheng and Wang, Xinchao},
+  journal={arXiv preprint arXiv:2210.13452},
+  year={2022}
+}
+```
