@@ -1,4 +1,4 @@
-# [MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452)
+# [MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452) (T-PAMI)
 
 <p align="left">
 <a href="https://arxiv.org/abs/2210.13452" alt="arXiv">
@@ -172,7 +172,7 @@ Weihao Yu would like to thank TRC program and GCP research credits for the suppo
 @article{yu2022metaformer_baselines,
   title={Metaformer baselines for vision},
   author={Yu, Weihao and Si, Chenyang and Zhou, Pan and Luo, Mi and Zhou, Yichen and Feng, Jiashi and Yan, Shuicheng and Wang, Xinchao},
-  journal={arXiv preprint arXiv:2210.13452},
-  year={2022}
+  journal={T-PAMI},
+  year={2023}
 }
 ```
