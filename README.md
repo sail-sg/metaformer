@@ -1,4 +1,4 @@
-# [MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452) (T-PAMI 2023)
+# [MetaFormer Baselines for Vision](https://arxiv.org/abs/2210.13452) (TPAMI 2024)
 
 <p align="left">
 <a href="https://arxiv.org/abs/2210.13452" alt="arXiv">
@@ -169,11 +169,14 @@ Weihao Yu would like to thank TRC program and GCP research credits for the suppo
 
 ## Bibtex
 ```
-@article{yu2023metaformer,
-  title={Metaformer baselines for vision},
+@article{yu2024metaformer,
   author={Yu, Weihao and Si, Chenyang and Zhou, Pan and Luo, Mi and Zhou, Yichen and Feng, Jiashi and Yan, Shuicheng and Wang, Xinchao},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2023},
-  publisher={IEEE}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={MetaFormer Baselines for Vision}, 
+  year={2024},
+  volume={46},
+  number={2},
+  pages={896-912},
+  doi={10.1109/TPAMI.2023.3329173}}
 }
 ```
