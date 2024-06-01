@@ -3,7 +3,7 @@
 <p align="left">
 <a href="https://arxiv.org/abs/2210.13452" alt="arXiv">
     <img src="https://img.shields.io/badge/arXiv-2210.13452-b31b1b.svg?style=flat" /></a>
-<a href="https://colab.research.google.com/github/sail-sg/metaformer/blob/main/misc/demo_metaformer_baselines.ipynb" alt="Colab">
+<a href="https://colab.research.google.com/drive/1raon_oZRnUBXb9ZYcMY3Au_r-3l4eP1I?usp=sharing" alt="Colab">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" /></a>
 </p>
 
@@ -126,7 +126,7 @@ The underlined numbers mean the numbers of parameters that are frozen after rand
 The checkpoints can also be found in [Baidu Disk](https://pan.baidu.com/s/1qJ-MHbuQyEdN7a6DJY9RFg?pwd=meta).
 
 #### Usage
-We also provide a Colab notebook which run the steps to perform inference with MetaFormer baselines: [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sail-sg/metaformer/blob/main/misc/demo_metaformer_baselines.ipynb)
+We also provide a Colab notebook which run the steps to perform inference with MetaFormer baselines: [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1raon_oZRnUBXb9ZYcMY3Au_r-3l4eP1I?usp=sharing)
 
 
 ## Validation
